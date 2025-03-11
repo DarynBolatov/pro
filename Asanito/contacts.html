@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Asanito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reservation.html">Заказать столик</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-info">
+            <p><strong>Адрес:</strong> ул. Момышулы, 2/8, г. Астана</p>
+            <p><strong>Телефон:</strong> <a href="tel:+77780080024">+7 (778) 008-00-24</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@asanito.ru">info@asanito.ru</a></p>
+            <p><strong>Часы работы:</strong> Пн-Вс: 10:00 - 23:00</p>
+        </div>
+
+        <h2>Мы на карте</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.123456789!2d71.480474!3d51.140601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245857f12345678%3A0x123456789abcdef0!2sAkbulak%20Town%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%91%D0%B0%D1%83%D1%8B%D1%80%D0%B6%D0%B0%D0%BD%20%D0%9C%D0%BE%D0%BC%D1%8B%D1%88%D1%83%D0%BB%D1%8B%2C%202%2F8%2C%20%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0!5e0!3m2!1sru!2skz!4v1614974936926!5m2!1sru!2skz"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        
+        <h2>Форма обратной связи</h2>
+        <form action="#" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Asanito. Все права защищены.</p>
+    </footer>
+</body>
+</html>

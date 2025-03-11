@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование | Asanito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Бронирование столика</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reservation.html">Заказать столик</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Заполните форму для бронирования</h2>
+        <form action="submit_reservation.php" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Время:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Количество гостей:</label>
+            <select id="guests" name="guests">
+                <option value="1">1 человек</option>
+                <option value="2">2 человека</option>
+                <option value="3">3 человека</option>
+                <option value="4">4 человека</option>
+                <option value="5">5 человек</option>
+                <option value="6">6 человек</option>
+                <option value="7">7 человек</option>
+                <option value="8+">8 и более</option>
+            </select>
+
+            <label for="comments">Дополнительные пожелания:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Забронировать</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Asanito. Все права защищены.</p>
+    </footer>
+</body>
+</html>
